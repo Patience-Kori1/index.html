@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Nova Square', sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    flex-wrap: wrap;
+    background-color: rgb(210, 206, 202);
+  }
+  
+  .header {
+    background-color: white;
+    padding-left: 20px;
+    height: 75px;
+    background-color: rgb(218, 184, 150);
+    border: 1px solid white;
+  
+  }
+  /*-----------------Menu burger--------------------------------------------------------------*/
+  .menu {
+    /* Pour que le menu reste en place quand on scroll */
+    position: fixed;
+    /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+    width: 0px;
+  }
+  #hamburger {
+    /* Pour que la checkbox ne s'affiche pas */
+    display: none;  
+  }
+  
+  #hamburger-logo {
+    /* Pour que le curseur soit un pointeur */
+    cursor: pointer;
+    background: rgb(199, 178, 178);
+    width: 250px;
+    display: block;
+    color: white;
+    /* Pour que le menu hamburger s'affiche toujours */
+    text-align: right;
+    /* Pour que le menu hamburger soit "rangé" par défaut */
+    transform: translateX(-188px) rotate(1turn);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    background: rgb(219, 186, 186);
+    overflow: hidden;
+    width: 250px;
+    /* Pour que les liens soient "rangés" par défaut */
+    transform: translateX(-220px) ;
+    border-radius: 10px;
+    border: 1px solid white;
+  }
+  
+  #hamburger-logo,
+  nav {
+    /* Pour qu'il y ait une animation */
+    transition: 0.9s;
+  }
+  
+  /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+  #hamburger:checked ~ #hamburger-logo,
+  #hamburger:checked ~ nav {
+    /* Changement de la position pour afficher les menus */
+    transform: translate(0);
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    background: #444;
+  }
+   
+  /*-----------------Fin Menu burger----------------------------------------------------------*/
+  
+  .my-mini-header {
+    display: none;/*A remetttre en display flex*/
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 50px;
+    padding: 20px 40px 40px 20px;
+  }
+  .nav-liste {
+    display: flex;
+    justify-content: space-around ;
+    gap: 50px;
+    list-style: none;
+  }
+  
+  li{
+    font-weight: 800;
+    font-size: 13px;
+  }
+  
+  .logo{
+    width: 100px;
+  }
+  
+  /* fin de mon header */
+  
+  .corpus {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+  .first-section { 
+    display: flex;
+    /* background-image: url("IMAGES/image1.jpeg"); */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    order:1;
+  }
+  
+  .p1-1{
+  color: white;
+  z-index: 1;
+  position: absolute;
+  left: 688px;
+  margin-top: 526px;
+  order:3;
+  }
+  
+  .second-section {
+    background-color: rgb(172, 243, 158); /*A effacer*/
+    display: flex;
+    order:2;
+  }
+  .third-section {
+    order:3;
+    background-color: rgb(81, 106, 158); /*A effacer*/
+    display: flex;
+  }
+  .image1-1 {
+    z-index: 0;
+    position: relative;
+    order:1;
+  }
+  .image1-1 img {
+    height: 100%;
+    width:100%;
+    object-fit: cover
+  }
+  .image1-2 {
+    z-index: 1;
+    position: absolute;
+    left:580px;
+    top:230px;
+    order:2;
+  }
+  .image1-2 img {
+    height: 250px;
+  }
+  
+  .image2-1 {
+    height: 600px;
+    width: 600px;
+  }
+  .image3-1 {
+    height: 100%;
+    width: 100%;
+  }
+  .p2-1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  @media-screen and (max-width :800px) {
+    /*insérez-vos propriétés CSS ici, avec vos sélecteur*/
+    
+  }
+  @media-screen and (min-width :768px) and (max-width:992) {
+    /*insérez-vos propriétés CSS ici, avec vos sélecteur*/
+    
+  }
+  
+  /* Brouillon de mon Elysé */
+  
